@@ -136,3 +136,24 @@ for (let i = 0; i < salmonCookie1.length; i++) {
 
 }
 footer();
+
+let form = document.getElementById('form');
+
+form.addEventListener('submit', AddNew);
+function AddNew(event) {
+   event.preventDefault();
+
+     let nameCustomer = event.target.salmonName.value;
+   let minCustomer = parseInt(event.target.min.value);
+    let maxCustomer = parseInt(event.target.max.value);
+  let avgchookies = parseFloat(event.target.avg.value);
+
+
+   let addSalmonCookie = new salmonCookie(nameCustomer, minCustomer, maxCustomer, avgchookies);
+   //delete the last element
+   table.deleteRow(-1);
+     addSalmonCookie.calcCustEachHour();
+   addSalmonCookie.calcCookiesEachHour();
+   addSalmonCookie.render();
+   footer();
+}

@@ -1,10 +1,97 @@
 *{
     font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: tomato;
+
   }
-  
-  
-  table,tr,th,td{
+  table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+    table,tr,th,td{
     border: solid black 1px;
     border-collapse: collapse;
   }
-   
+
+ }
+ header {
+   background-color: lightpink;
+ }
+ footer {
+   background-color: palegreen;
+   text-align: center;
+   color: indianred;
+   margin-top: 30px;
+ }
+ 
+  h1 {
+   text-align: center;
+   color: indianred;
+
+ }
+ h2 { color:red; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+ #button{
+  background:lightblue;
+  border-radius: 30px;
+  width: 15em;
+  height: 3em;
+  position:relative;
+  margin-top: 20px;
+ }
+ #salespage {
+ 
+  left: 40%;
+  top: 200px;}
+  ul {
+    background: #3399ff;
+    padding: 50px;
+  }
+  ul li {
+    background: #cce5ff;
+    margin: 5px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 50%;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=numper], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #d4801f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #da821e;
+  }
+  
+  #formD {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
